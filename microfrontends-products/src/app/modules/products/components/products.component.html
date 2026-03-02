@@ -1,0 +1,28 @@
+<div class="catalog__container">
+    <h2 class="catalog__title">Catálogo de productos</h2>
+  
+    <table class="table">
+      <thead class="table-head">
+        <tr>
+          <th class="table-cell">Producto</th>
+          <th class="table-cell">Precio</th>
+          <th class="table-cell">Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products" class="table-row">
+          <td class="table-cell">{{ product.name }}</td>
+          <td class="table-cell">{{ product.price | currency:'EUR' }}</td>
+          <td class="table-cell">
+            <button class="button" (click)="addToCart(product)">Añadir a la cesta</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <dialog #confirmationDialog>
+    <p>{{ dialogMessage }}</p>
+    <button (click)="closeDialog(confirmationDialog)">Cerrar</button>
+  </dialog>
+  

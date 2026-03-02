@@ -1,0 +1,36 @@
+.header {
+    background-color: #333;
+    padding: 1rem;
+    color: #fff;
+  
+    &__nav {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+  
+      &:hover {
+        color: #ddd;
+      }
+  
+      .material-icons {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  

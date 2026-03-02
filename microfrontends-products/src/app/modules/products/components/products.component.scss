@@ -1,0 +1,15 @@
+.catalog {
+    &__container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    &__title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: #333;
+    }
+  }
+  

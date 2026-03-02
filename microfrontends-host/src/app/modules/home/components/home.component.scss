@@ -1,0 +1,30 @@
+.home {
+    &__container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    &__title {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+  
+    &__description {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  
+    &__featured {
+      margin-top: 30px;
+    }
+  
+    &__featured-title {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  }
+  
